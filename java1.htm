@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="java1.css">
+</head>
+<body>
+    <!-- <div class="text" id="box">Hi</div>
+    <script src="java1.js"></script> -->
+
+    <!-- <h1 id="title" class="title h1">
+        <i>welcome to js class</i>
+    </h1> -->
+
+    <!-- ************************************************ -->
+
+    <!-- <h1 id="title" class="title h1"></h1>
+        welcome to js class
+    </h1>
+    <script>
+        const h1 = document.getElementsByTagName('h1')
+        console.log(h1)
+
+        const h1byid = document.getElementById('title')
+        console.log(h1byid)
+
+        const h1byclass = document.getElementsByClassName('title')
+        console.log(h1byclass)
+    </script> -->
+
+    <!-- ********************************************** -->
+
+
+    <!-- <h1 id="title" class="title h1">
+        welcome to js class
+    </h1>
+    <div>
+        <p id="para">qwerty</p>
+    </div>
+    <script>
+        const h1byid = document.getElementById('title')
+        console.log(h1byid)
+        const italic = document.createElement('i')
+        italic.innerText = 'by VTS'
+        h1byid.append(italic)
+        document.body.removeChild(h1byid)
+    </script> -->
+    
+    <!-- **************************************************** -->
+
+    <!-- <h1 id="title" class="title h1" onclick="alert('clicked the H1tag')">
+        welcome to js class
+    </h1> -->
+
+    <!-- **************************************************** -->
+
+    <!-- <h1 id="title" class="title h1" onmouseover="alert('clicked the H1tag')">
+        welcome to js class
+    </h1> -->
+
+    <!-- ****************************************************** -->
+
+    <!-- <h1 id="title" class="title h1">
+        Welcome to js Class
+    </h1>
+    <script>
+        const h1 = document.getElementById('title')
+        function click() {
+            alert('h1 was clicked..!')
+        }
+
+        // h1.addEventListener("click",click)
+
+        // h1.addEventListener("mouseover", function(){
+        //     alert('h1 was clicked..!')
+        // })
+
+        h1.addEventListener("mouseover", () => {
+            alert('h1 was clicked..!')
+        })
+    </script> -->
+
+    <!-- ************************************************************* -->
+
+    <!-- <h1 id="title" class="title h1">
+        <p>para-1</p>
+        <p>para-2</p>
+        <p>para-3</p>
+    </h1>
+    <script>
+        const h1 = document.getElementById('title')
+        function click() {
+            alert('h1 was clicked..!')
+        }
+        h1.addEventListener("click", (e) => {
+            console.log(e.target)
+        })
+    </script> -->
+
+    <!-- ************************************************************ -->
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const h1 = document.getElementById('title')
+            console.log(h1)
+        })
+    </script>
+    <h1 id="title" class="title h1">
+        <p>para-1</p>
+        <p>para-2</p>
+        <p>para-3</p>
+    </h1> -->
+
+    <!-- ************************************************************* -->
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const h1 = document.getElementById('title')
+            console.log(h1)
+        })
+    </script>
+    <div id="grandparent" class="box">
+        <div id="parent" class="box pbox">
+            <div id="child" class=" box cbox">
+            </div>
+        </div>
+    </div>  -->
+
+    <!-- ******************************************************** -->
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const child = document.getElementById('child')
+            const parent = document.getElementById('parent')
+            const grandparent = document.getElementById('grandparent')
+
+            child.addEventListener('click', () => console.log('CHILD'))
+            parent.addEventListener('click', () => console.log('PARENT'))
+            grandparent.addEventListener('click', () => console.log('GRANDPARENT')) 
+        });
+    </script>
+    <div id="grandparent" class="box">
+        <div id="parent" class="box pbox">
+            <div id="child" class=" box cbox">
+            </div>
+        </div>
+    </div>  -->
+
+    <!-- ****************************************************************** -->
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const child = document.getElementById('child')
+            const parent = document.getElementById('parent')
+            const grandparent = document.getElementById('grandparent')
+
+            child.addEventListener('click', () => console.log('CHILD'), {capture: true})
+            parent.addEventListener('click', () => console.log('PARENT'), {capture: true})
+            grandparent.addEventListener('click', () => console.log('GRANDPARENT'), {capture: true}) 
+        });
+    </script>
+    <div id="grandparent" class="box">
+        <div id="parent" class="box pbox">
+            <div id="child" class=" box cbox">
+            </div>
+        </div>
+    </div>  -->
+
+    <!-- *********************************************************************** -->
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const child = document.getElementById('child')
+            const parent = document.getElementById('parent')
+            const grandparent = document.getElementById('grandparent')
+
+            child.addEventListener('mouseover', () => console.log('CHILD'), {capture: true})
+            parent.addEventListener('mouseover', () => console.log('PARENT'), {capture: true})
+            grandparent.addEventListener('mouseover', () => console.log('GRANDPARENT'), {capture: true}) 
+        });
+    </script>
+    <div id="grandparent" class="box">
+        <div id="parent" class="box pbox">
+            <div id="child" class=" box cbox">
+            </div>
+        </div>
+    </div>  -->
+
+    <!-- ********************************************************************* -->
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const child = document.getElementById('child')
+            const parent = document.getElementById('parent')
+            const grandparent = document.getElementById('grandparent')
+
+            child.addEventListener('click', function click() {
+                console.log('clicked')
+            })
+        });
+    </script>
+    <div id="grandparent" class="box">
+        <div id="parent" class="box pbox">
+            <div id="child" class=" box cbox">
+            </div>
+        </div>
+    </div>  -->
+
+    <!-- ******************************************************************** -->
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const child = document.getElementById('child')
+            const parent = document.getElementById('parent')
+            const grandparent = document.getElementById('grandparent')
+            function click() {
+                console.log('clicked')
+            }
+            child.addEventListener('click', click)
+
+            child.removeEventListener('click', click)
+        });
+    </script>
+    <div id="grandparent" class="box">
+        <div id="parent" class="box pbox">
+            <div id="child" class=" box cbox">
+            </div>
+        </div>
+    </div>  -->
+
+    <!-- ********************************************************************** -->
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const child = document.getElementById('child')
+            const parent = document.getElementById('parent')
+            const grandparent = document.getElementById('grandparent')
+            function click() {
+                setTimeout(function() {
+                    console.log('clicked')
+                }, 2000)
+            }
+            child.addEventListener('click', click, {once: true})
+        });
+    </script>
+    <div id="grandparent" class="box">
+        <div id="parent" class="box pbox">
+            <div id="child" class=" box cbox">
+            </div>
+        </div>
+    </div>  -->
+
+    <!-- ***********************event listerner:remove content****************** -->
+
+    <!-- <div id="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quasi tempore provident ullam asperiores ducimus, soluta in quas iure nemo? Ullam vitae dicta sed reiciendis, ipsam aliquam reprehenderit et delectus?
+    </div><br></br>
+    <button id="btn">remove</button>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+           const content = document.getElementById('content') 
+           const button = document.getElementById('btn') 
+
+           button.onclick = ()=>{
+            content.remove()
+           }
+           button.addEventListener('click', () => {
+            content.remove()
+           })
+        });
+    </script> -->
+
+    <!-- ******************event handler:remove content************************* -->
+
+    <!-- <div id="content"></div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quasi tempore provident ullam asperiores ducimus, soluta in quas iure nemo? Ullam vitae dicta sed reiciendis, ipsam aliquam reprehenderit et delectus?
+    </div><br></br>
+    <button id="btn">remove</button>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+           const content = document.getElementById('content') 
+           const button = document.getElementById('btn') 
+
+           button.onclick = ()=> {
+            content.remove()
+           }
+           button.onclick = () => {
+            console.log('content removed')
+           }
+        });
+    </script> -->
+
+    <!-- ************ligth mode to dark mode or vice verse********************* -->
+
+    <!-- <button id="toogle">Dark Mode</button>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            btn = document.getElementById('toogle')
+            btn.addEventListener('click', ()=> {
+                const className = document.body.getAttribute('class')
+                if (className === 'dark'){
+                    document.body.removeAttribute('class')
+                    btn.innerText = 'Dark Mode'
+                } else {
+                    document.body.setAttribute('class', 'dark')
+                    btn.innerText = 'Light Mode'
+                }
+            })
+        });
+    </script> -->
+
+    <!-- ******************************************************************* -->
+
+    <!-- <h4>TODO List</h4>
+    <ol id="tasks">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ol>
+    <script>
+        document.addEventListener("DOMContentLoaded", ()=> {
+            const tasks = document.getElementById('tasks');
+
+            console.log(tasks.firstChild)
+        });
+    </script> -->
+
+    <!-- ***************************************************************** -->
+
+    <!-- <h4>TODO List</h4>
+    <ol id="tasks">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ol>
+    <script>
+        document.addEventListener("DOMContentLoaded", ()=> {
+            const tasks = document.getElementById('tasks');
+
+            console.log(tasks.firstElementChild)
+        });
+    </script> -->
+
+    <!-- ****************************************************************** -->
+
+    <!-- <h4>TODO List</h4>
+    <ol id="tasks">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ol>
+    <script>
+        document.addEventListener("DOMContentLoaded", ()=> {
+            const tasks = document.getElementById('tasks');
+            const rmbtn = document.getElementById('remove')
+
+            rmbtn.addEventListener('click', ()=> {
+                // tasks.removeChild(tasks.firstElementChild)
+                // tasks.firstElementChild.remove()
+                tasks.removeChild(tasks.lasttElementChild)
+
+            })
+        });
+    </script> -->
+
+    <!-- ******************************************************************* -->
+
+    <!-- <div id="status"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            Window.addEventListener('offline', () => {
+                const status = document.getElementById('status')
+                status.innerHTML = "<b style='color:red'>Offline</b>"
+            })
+            Window.addEventListener('online', () => {
+                const status = document.getElementById('status')
+                status.innerHTML = "<b style='color:green,>Online</b>"
+            })
+        });
+    </script> -->
+
+
+
+
+</body>
+</html>

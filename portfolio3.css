@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    color: white;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(190, 8, 8);
+    position: fixed;
+}
+.logo{
+    width: 160px;
+    margin-left: 30px;
+}
+nav, ul, li, a{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 5px;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color: white;
+}
+a:hover{
+    background-color: rgb(222, 217, 217);
+    color: red;
+}
+.header-text{
+    margin-top: 20%;
+    margin-left: 10%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 55px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: red;   
+}
+.image{
+    align-content: right;
+    margin-left: 65%;
+    margin-top: -40%;
+}
+/* ****************************about******************************* */
+#about {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 10%;
+}
+.image2{
+    align-content: left;
+    margin-left: -45%;
+    margin-top: -35%;
+    margin-right: 20%;
+}
+/* *******************************education************************** */
+#education{
+    margin-left: 30%;
+    margin-right: 10%;
+    margin-top: 20%;
+    color: white;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <FORM action="results.html" method="get" id="formdata">
+        <pre>
+            <label>Name:</label>
+            <input>
+            <label>Age:</label>
+            <input type="number">
+        </pre>
+        <div>
+            <label for="username">Name:</label>
+            <input id="username" name="uname" value="john" readonly>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input id="age" type="number" min="18" max="100" name="uage" placeholder="Enter your Age">
+        </div>
+        <div>
+            <label>
+                Email:
+                <input type="email" name="uemail">
+            </label>
+        </div>
+        <div>
+            <label>Fruits:</label>
+            <label for="apple">apple</label>
+            <input type="checkbox" name="fruits" value="apple">
+            <label for="banana">banana</label>
+            <input type="checkbox" name="fruits" value="banana">
+        </div>
+        <div>
+            <label for="">Gender:</label>
+
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" name="female">
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password" name="password" required>
+        </div>
+        <div>
+            <label for="phno">Phone Number:</label>
+            <input id="phno" type="tel" name="mobileNo">
+        </div>
+
+        <div>
+            <label for="favFoods">food items:</label>
+            <select name="favFoods" multiple>
+                <option value="biriyani">Biriyani</option>
+                <option value="noodles" label="Noodles"></option>
+            </select>
+        </div>
+        <button type="reset">Reset</button>
+    </FORM>
+    <button form="formdata">Submit</button>
+</body>
+</html>

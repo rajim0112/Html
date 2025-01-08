@@ -1,0 +1,62 @@
+.article{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(224, 21, 38);
+    font-size: 40px;
+    font-style: unset;
+}
+
+.picture{
+    margin-left: 170px;
+    margin-right: 150px;  
+}
+
+.writing{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin-bottom: 10px;
+}
+
+h3{
+    font-family: sans-serif;
+    height: 30px;
+    width: 280px;
+}
+
+#insta{
+    background-color: pink;
+    border: 1px solid black;
+    border-style: dashed;
+}
+
+#whatsapp{
+    background-color: aquamarine;
+    border: 1px solid black;
+    border-style: dashed;
+}
+
+#facebook{
+    background-color: lightblue;
+    border: 1px solid black;
+    border-style: dashed;
+    
+}
+
+.unorder{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    background-color: rgb(202, 217, 215);
+    color: brown;
+    border: 2px solid black;
+}
+
+.order{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    background-color: rgb(182, 211, 224);
+    color: rgb(59, 6, 174);
+    border: 2px solid black;
+}

@@ -1,0 +1,132 @@
+#main {
+    text-align: center;
+}
+body{
+    background-color: lightyellow;
+    height: 100vh;
+}
+
+h1 {
+    color: red;
+    margin-bottom: -5px;
+}
+
+#para {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: -10px;
+    color: rgb(59, 59, 227);
+    font-size: 18px;
+    font-style: italic;
+}
+
+#ply{
+    font-size: 18px;
+    color: rgb(229, 22, 201);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#print {
+    font-family: Verdana,Geneva, Tahoma, sans-serif;
+    color: rgba(4, 114, 39, 0.718);
+    font-size: 21px;
+}
+
+.ui {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+.cell {
+    background-color:lightyellow;
+    border: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    text-align: center;
+    cursor: pointer;
+} 
+
+.cell:active {
+    outline: none;
+}
+
+/* 3*3 Grid */
+#b1{
+    border-bottom: 1px solid gray ;
+    border-right: 1px solid gray;
+}
+
+#b2 {
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+#b3 {
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+#b4 {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+}
+    
+#b5 {
+    border: 1px solid gray;
+}
+
+#b6 {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+#b7 {
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+#b8 {
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+#b9 {
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+/* Reset Button */
+#btn {
+    box-sizing: border-box;
+    width: 95px;
+    height: 40px;
+    border: 1.5px solid black;
+    color: black;
+    margin-left: auto;
+    border-radius: 8px;
+    font-family: Verdana,Geneva, Tahoma, sans-serif;
+    background-color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#btn:hover{
+    font-size: 23px;
+    width: 100px;
+    height: 45px;
+    border: 1.5px solid red;
+    color: red;
+}
+
+

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const obj = {
+        //     name: "Krishna",
+        //     age: 21,
+        //     skills: ["html","css","js"],
+        //     code: () => {
+        //         console.log("He's coding");
+        //     },
+        // };
+        // console.log(obj.code);
+        // console.log(obj.code());
+
+        // const obj = {
+        //     name: "Krishna",
+        //     age: 21,
+        //     skills: ["html","css","js"],
+        //     code: () => {
+        //         console.log("He's coding");
+        //     },
+        // };
+
+        // obj.name = 'ram'
+        // obj.job = 'cloud engineer'
+        // console.log(obj)
+
+        // const obj = {
+        //     name: "Krishna",
+        //     age: 21,
+        //     skills: ["html","css","js"],
+        //     code: () => {
+        //         console.log("He's coding");
+        //     },
+        // };
+
+        // obj.name = 'ram'
+        // obj.job = 'cloud engineer'
+        // delete obj.skills
+        // console.log(obj)
+
+        // const obj = {
+        //     name: "Krishna",
+        //     age: 21,
+        //     skills: ["html","css","js"],
+        //     code: () => {
+        //         console.log("He's coding");
+        //     },
+        // };
+
+        // const name = obj.name
+        // const job = obj.job
+        // const skills = obj.skills
+        // console.log(skills)
+        
+        // const obj = {
+        //     name: "Krishna",
+        //     age: 21,
+        //     skills: ["html","css","js"],
+        //     code: () => {
+        //         console.log("He's coding");
+        //     },
+        // };
+
+        // const {name, age, skills} = obj
+        // console.log(age)
+        
+        // const obj = {
+        //     name: "Krishna",
+        //     age: 21,
+        //     skills: ["html","css","js"],
+        //     code: () => {
+        //         console.log("He's coding");
+        //     },
+        // };
+
+        // const myObj  = { ...obj,
+        //     job: 'software engineer'
+        // }
+        // console.log(myObj)
+
+        // const obj = {
+        //     name: "Krishna",
+        //     age: 21,
+        //     skills: ["html","css","js"],
+        //     code: () => {
+        //         console.log("He's coding");
+        //     },
+        // };
+
+        // const myObj  = { ...obj,
+        //     job: 'software engineer'
+        // }
+        // console.log(obj)
+        // console.log(myObj)
+
+        // const obj = {
+        //     name: "Krishna",
+        //     age: 21,
+        //     skills: ["html","css","js"],
+        //     code: () => {
+        //         console.log("He's coding");
+        //     },
+        // };
+
+        // const myObj  = { ...obj,
+        //     job: 'software engineer'
+        // }
+        // console.log(obj.name)
+        // console.log(myObj['job'])
+
+        // const obj = {
+        //     name: "Krishna",
+        //     age: 21,
+        //     skills: ["html","css","js"],
+        //     code: () => {
+        //         console.log("He's coding");
+        //     },
+        // };
+
+        // const myObj  = { ...obj,
+        //     job: 'software engineer'
+        // }
+        // for(let prop in obj) {
+        //     console.log(prop)
+        // }
+
+        // const obj = {
+        //     name: "Krishna",
+        //     age: 21,
+        //     skills: ["html","css","js"],
+        //     code: () => {
+        //         console.log("He's coding");
+        //     },
+        // };
+
+        // const myObj  = { ...obj,
+        //     job: 'software engineer'
+        // }
+        // for(let prop in obj) {
+        //     console.log(obj[prop])
+        // }
+
+        // const obj = {
+        //     name: "Krishna",
+        //     age: 21,
+        //     skills: ["html","css","js"],
+        //     code: () => {
+        //         console.log("He's coding");
+        //     },
+        // };
+
+        // const myObj  = { ...obj,
+        //     job: 'software engineer'
+        // }
+        // for(let prop in obj) {
+        //     console.log(prop+ ":" +obj[prop])
+        // }
+
+        // const obj = {
+        //     name: "Krishna",
+        //     age: 21,
+        //     skills: ["html","css","js"],
+        //     code: () => {
+        //         console.log("He's coding");
+        //     },
+        // };
+
+        // const myObj  = { ...obj,
+        //     job: 'software engineer'
+        // }
+        // for(let prop in obj) {
+        //     console.log(`${prop} : ${obj[prop]}`)
+        // }
+
+        // const obj = {
+        //     name: "Krishna",
+        //     age: 21,
+        //     skills: ["html","css","js"],
+        //     code: () => {
+        //         console.log("He's coding");
+        //     },
+        // };
+        // console.log(`my name is ${obj.name}, I'm ${obj.age} old, my skills are ${obj.skills}`)
+        // const myObj  = { ...obj,
+        //     job: 'software engineer'
+        // }
+        // for(let prop in obj) {
+        //     console.log(`${prop} : ${obj[prop]}`)
+        // }
+
+        // const obj = {
+        //     'full name': "Krishna",
+        //     age: 21,
+        //     skills: ["html","css","js"],
+        //     code: () => {
+        //         console.log("He's coding");
+        //     },
+        // };
+        // const myObj  = { ...obj,
+        //     job: 'software engineer'
+        // }
+        // for(let prop in obj) {
+        //     console.log(`${prop} : ${obj[prop]}`)
+        // }
+
+        // const a = [1,2,3,4]
+        // let b = []
+        // for(let i=0;i<a.length;i++) {
+        //     b[i] = a[i]*2
+        // }
+        // console.log(b)
+
+        // const a = [1,2,3,4]
+        // let b = a.map((x)=>x*3)
+        // console.log(b)
+
+        // const a = [1,2,3,4]
+        // console.log(Math.pow(2,3))
+        // console.log(4**3)
+        // let b = a.map((x)=>x*3)
+        // console.log(b)
+
+        // const a = [1,2,3,4]
+        // let b = []
+        // for(let i=0;i<a.length;i++) {
+        //     if(a[i]%2==0){
+        //         b.push(a[i])
+        //     }
+        // }
+        // console.log(b)
+        
+        // const a = [1,2,3,4]
+        // let c=a.filter((x)=>x%2==0)
+        // console.log(c)
+
+        // const a = [1,2,3,4]
+        // let c=a.filter((x)=>x%2==1)
+        // console.log(c)
+
+        // const a=[1,2,3,4]
+        // let sum=0
+        // for(let i=0;i<a.length;i++) {
+        //     console.log(`sum = ${sum} + ${a[i]}`)
+        //     sum = sum + a[i]
+        // }
+        // console.log(sum)
+
+        // const a=[1,2,3,4]
+        // let sum=0
+        // for(let i=0;i<a.length;i++) {
+        //     console.log(`sum = ${sum} + ${a[i]}`)
+        //     sum = sum + a[i]
+        // }
+        // let result = a.reduce((sum,present) => sum+present)
+        // console.log("sum = "+result)
+
+        // const a = [1,2,3,4]
+        // const [a1,a2,a3,a4] = a
+        // console.log(a1)
+        // console.log(a2)
+        // console.log(a3)
+        // console.log(a4)
+
+        // const a = [1,2,3,4]
+        // const [a1,a2, ,a4] = a
+        // console.log(a1)
+        // console.log(a2)
+        // console.log(a4)
+
+        // const a = [1,2,3,4,5,6]
+        // const [a1,a2, ...a4] = a
+        // console.log(a1)
+        // console.log(a2)
+        // console.log(a4)
+
+        // const a = [1,2,3,4,5,6]
+        // const [a1,a2, ,a4] = "Raji"
+        // console.log(a1)
+        // console.log(a2)
+        // console.log(a4)
+
+        // const a = [1,2,3,4,5,6]
+        // const [a1,a2,...a4] = "Rajeswari"
+        // console.log(a1)
+        // console.log(a2)
+        // console.log(a4)
+
+        // const name = 'rajeswari'
+        // console.log(name.toUpperCase())
+
+        // let num = 5 + '3'
+        // console.log(num)
+
+        // let num1 = '4'
+        // let num2 = 3
+        // console.log(num1 + num2)
+
+        // let num1 = '4'
+        // let num2 = 3
+        // console.log(Number(num1) + num2)
+
+        // let str1 = 5
+        // let str2 = 'star'
+        // console.log(String(str1) + str2)
+
+        // let num3 = '5 star'
+        // console.log(Number(num3))
+
+        // let num3 = '5 star'
+        // console.log(parseInt(num3))
+
+        // let num3 = '5.5 star'
+        // console.log(parseInt(num3))
+        // console.log(parseFloat(num3))
+
+        // console.log(12e6)
+
+        // class myClass {
+        //     empName = 'Ram'
+        //     getName() {
+        //         console.log('My name was Ram')
+        //     }
+        // }
+        // const inst = new myClass()
+        // console.log(inst.empName)
+        // inst.getName()
+
+        // const empName = 'Krishna'
+        // class myClass {
+        //     empName = 'Ram'
+        //     getName() {
+        //         console.log(`My name was ${empName}`)
+        //     }
+        // }
+        // const inst = new myClass()
+        // console.log(inst.empName)
+        // inst.getName()
+
+        // class myClass {
+        //     empName = 'Ram'
+        //     empAge
+        //     getName() {
+        //         console.log(`My name was ${this.empName}, I'm ${this.empAge} years old`)
+        //     }
+        //     constructor(name,age) {
+        //         console.log('Object Created')
+        //         this.empName = name
+        //         this.empAge = age
+        //     }
+        // }
+        // const inst = new myClass('krishna',22)
+        // inst.getName()       
+        
+
+    </script>
+    <!-- <input type="number"> -->
+</body>
+</html>

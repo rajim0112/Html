@@ -1,0 +1,28 @@
+.para{
+   width: 100px;
+   height: 100px;
+   background-color: aquamarine;
+   margin-bottom: 10px;
+}
+#red{
+    background-color: red;
+}
+#blue{
+    background-color: blue;
+}
+#green{
+    background-color: green;
+}
+#pink{
+    background-color: pink;
+}
+#yellow{
+    background-color: yellow;
+}
+.bold{
+    background-color: aquamarine;
+}
+#head1{
+    background-color: blueviolet;
+}
+

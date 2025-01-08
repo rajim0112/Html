@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const a = 'object'
+        // console.log(typeof a)
+
+        // const a = 12345
+        // console.log(typeof a)
+
+        // const a = [12345]
+        // console.log(typeof a)
+
+        // const a = true
+        // console.log(typeof a)
+
+        // const a = {}
+        // console.log(typeof a)
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js']
+        // }
+        // console.log(a)
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: function write() {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // // console.log(a.name)
+        // console.log(a.code)
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: function write() {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // a.code()
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: function() {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // a.code()
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // a.code()
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // console.log(a['name'])
+
+        // const a = {
+        //     'full name': 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // console.log(a['full name'])
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // console.log(a['name'])
+        // a.name = 'meghana'
+        // console.log(a['name'])
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // console.log(a['name'])
+        // a['name'] = 'meghana'
+        // console.log(a['name'])
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // console.log(a['name'])
+        // delete a.name
+        // console.log(a['name'])
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // console.log(a['name'])
+        // const b = a
+        // console.log('b Object:' +b.name)
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // console.log(a['name'])
+        // const b = a
+        // // console.log(b)
+        // b.code()
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // console.log(a['name'])
+        // const b = a
+        // console.log('b Object: '+b.name)
+        // b.name = 'lakshmi'
+        // console.log('b Object: '+b.name)
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // console.log(a['name'])
+        // const b = a
+        // console.log('b Object: '+b.name)
+        // delete b.name
+        // console.log(a)
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // const b = Object(a)
+        // console.log(b)
+        // b.code()
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // const b = Object.create(a)
+        // console.log(b)
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // a.dept = 'eee'
+        // console.log(a)
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // class Employee {
+        //     name = 'krishna';
+        //     role;
+        //     id;
+        //     salary;
+        //     job() {
+        //         console.log('Software')
+        //     }
+        // }
+        // const emp1 = new Employee()
+        // console.log(emp1.name)
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // class Employee {
+        //     name = 'krishna';
+        //     role;
+        //     id;
+        //     salary;
+        //     job() {
+        //         console.log('Software')
+        //     }
+        // }
+        // const emp1 = new Employee()
+        // emp1.id = 276
+        // console.log(emp1.id)
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // class Employee {
+        //     name = 'krishna';
+        //     role;
+        //     id;
+        //     salary;
+        //     job() {
+        //         let role = 'software'
+        //         console.log(role)
+        //     }
+        // }
+        // const emp1 = new Employee()
+        // emp1.job()
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // const role = 'hardware'
+        // class Employee {
+        //     name = 'krishna';
+        //     role;
+        //     id;
+        //     salary;
+        //     job() {
+        //         console.log(role)
+        //     }
+        // }
+        // const emp1 = new Employee()
+        // emp1.job()
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // class Employee {
+        //     name = 'krishna';
+        //     role = 'cloud engineer'
+        //     id;
+        //     salary;
+        //     job() {
+        //         console.log(this.role)
+        //     }
+        // }
+        // const emp1 = new Employee()
+        // emp1.job()
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // class Employee {
+        //     name = 'krishna';
+        //     role = 'cloud engineer'
+        //     id;
+        //     salary;
+        //     job() {
+        //         console.log(this.role)
+        //     }
+        // }
+        // const emp1 = new Employee()
+        // emp1.job()
+        // emp1.name = 'venkata'
+        // console.log(emp1.name)
+
+        // const a = {
+        //     name: 'raji',
+        //     age: 21,
+        //     skills: ['html','css','js'],
+        //     code: () => {
+        //         console.log("She is Coder")
+        //     }
+        // }
+        // class Employee {
+        //     name = 'krishna';
+        //     role = 'cloud engineer'
+        //     id;
+        //     salary;
+        //     job() {
+        //         console.log(this.role)
+        //     }
+        // }
+        // const emp1 = new Employee()
+        // emp1.job()
+        // emp1.doj = '27-09-2024'
+        // console.log(emp1.doj)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <link type="text/css" rel="stylesheet" href="vote.css">
+</head>
+<body style="background-color: azure">
+    <form action="./Thankyou.html" method="get" id="formdata">
+        <h2>Voter Registration Form</h2><br>
+        <img src="./Images/vote.jpeg" alt="No image found"><br></br>
+        <div>
+            <label>First Name</label>
+            <input placeholder="Enter first name" required><br></br>
+    
+            <label>Middle Name</label>
+            <input placeholder="Enter middle name"><br></br>
+    
+            <label>Last Name</label>
+            <input placeholder="Enter last name" required><br></br>
+    
+            <label>Phone Number</label>
+            <input type="number" maxlength="10" placeholder="Phone Number" required><br></br>
+
+            <label>Date of Birth</label>
+            <input type="date" required><br></br>
+    
+            <label>Email</label>
+            <input type="email" name="uemail" placeholder="abc@gmail.com" required><br></br>
+
+            <label>Age</label>
+            <input type="number" min="18" max="150" placeholder="Enter age" required><br></br>
+
+            <label>Gender :</label>
+            <input type="radio" id="male" name="Gender" value="male" >
+            <label>Male</label>
+            <input type="radio" id="female" name="Gender" value="female" >
+            <label>Female</label><br></br>
+
+            <label>Country</label>
+            <select>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Australia</option>
+            </select><br></br>
+
+            <label>State</label>
+            <select>
+                <option>Andhrapradesh</option>
+                <option>Telangana</option>
+                <option>Tamilnadu</option>
+                <option>Karnataka</option>
+            </select><br></br>
+
+            <label>Address</label><br>
+            <textarea name="Address" cols="30" rows="5" placeholder="Write your full address" required></textarea><br></br>
+
+            <button type="reset">Reset</button>  
+            <button form="formdata">Submit</button>
+    
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="welcome">Welcome</h1>
+    <button onclick="func1()">Change</button>
+    <script>
+        function func1(){
+            document.getElementById("welcome").innerHTML="Text is Change"
+        }
+    </script> -->
+
+    <!-- ************************************************** -->
+
+    <!-- <h1 id="welcome">Welcome</h1>
+    <button onclick="func1()">Change</button>
+    <script src="java.js"></script> -->
+
+    <!-- ******************************************************** -->
+
+    <!-- <h1>Add Two Numbers</h1>
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button onclick="addNumbers()">Add</button>
+    <p id="result">Result</p>
+    <script src="java.js"></script> -->
+
+    <!-- **************************************************************** -->
+
+    <!-- <div>
+        <script>
+            let a = 10;
+            a = 20;
+            console.log(a)
+            var b = 30
+            b = 40
+            console.log(b)
+            const c = 50
+            c = 60
+            console.log(c)
+        </script>
+    </div> -->
+
+    <!-- ***************************************************************** -->
+    <!-- var is re declared but for let is not possible that declaration -->
+    <!-- <div>
+        <script>
+            let a = 10;
+            a = 20;
+            let a = 30;
+            console.log(a)
+            var b = 30
+            b = 40
+            var b = 60;
+            console.log(b)
+            const c = 50
+            c = 60
+            console.log(c)
+        </script>
+    </div> -->
+
+    <!-- ********************************************************************** -->
+
+    <!-- <div>
+        <script>
+            const multiply = new Function("a", "b", "return a*b")
+            console.log(multiply(2,3))
+            function fun(a,b) {
+                console.log(a*b)
+            } 
+            fun(4,5)
+            const add = (a,b) => {
+                console.log(a+b)
+            }       
+            add(1,2)
+        </script>
+    </div> -->
+
+    <!-- ****************************************************************************** -->
+    
+    <!-- <div>
+        <script>
+            const multiply = new Function("a", "b", "return a*b")
+            console.log(multiply(2,3))
+            function fun(a,b) {
+                console.log(a*b)
+            } 
+            fun(4,5)
+            const add = (a,b=3) => {
+                console.log(a+b)
+            }       
+            add(1)
+        </script>
+    </div>  -->
+
+    <!-- ****************************************************************************** -->
+
+    <!-- <div>
+        <script>
+            const multiply = new Function("a", "b", "return a*b")
+            console.log(multiply(2,3))
+            function fun(a,b) {
+                console.log(a*b)
+            } 
+            fun(4,5)
+            const add = (a=3,b) => {
+                console.log(a+b)
+            }       
+            add(a=1,b=2)
+        </script>
+    </div> -->
+
+    <!-- **************************************************************************** -->
+
+    <!-- <div>
+        <script>
+            const multiply = new Function("a", "b", "return a*b")
+            console.log(multiply(2,3))
+            function fun(a,b) {
+                console.log(a*b)
+            } 
+            fun(4,5)
+            const add = (a=3,b) => {
+                console.log(a+b)
+            }       
+            add(0,b=2)
+        </script>
+    </div> -->
+
+    <!-- ******************************************************************************* -->
+
+    <!-- <div>
+        <script>
+            const multiply = new Function("a", "b", "return a*b")
+            // console.log(multiply(2,3))
+            function fun(a,b) {
+                return a*b
+            } 
+            // fun(4,5)
+            // const add = (a=3,b) => console.log(a+b)
+            //     add(a=1,b=2)    
+            console.log(fun()) 
+        </script>
+    </div> -->
+
+    <!-- ******************************************************************************** -->
+
+    <!-- <div>
+        <script>
+            const multiply = new Function("a", "b", "return a*b")
+            function fun(a,b) {
+                return a*b
+            }  
+            var a = 10
+            var b = a
+            console.log(a)
+            console.log(b) 
+        </script>
+    </div> -->
+
+    <!-- ******************************************************************************* -->
+
+    <!-- <div>
+        <script>
+            const multiply = new Function("a", "b", "return a*b")
+            function fun(a=1,b=3) {
+                return a*b
+            }  
+            const myFun = fun
+            console.log(myFun())
+        </script>
+    </div> -->
+
+    <!-- ******************************************************************************** -->
+
+    <!-- <div>
+        <script>
+            const multiply = new Function("a", "b", "return a*b")
+            function fun(a=1,b=3) {
+                return a*b
+            }  
+            const myFun = fun
+            console.log(myFun(2,4))
+        </script>
+    </div> -->
+
+    <!-- ******************************************************************************* -->
+
+    <!-- <div id="content">
+        <p class="para p1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsam dolorum et sit quidem saepe provident fugit sequi vel, reprehenderit ipsa officiis? Cupiditate laborum asperiores culpa, sunt laboriosam consequatur nam.
+            Harum dignissimos aliquam molestias nulla modi? Temporibus sunt quis tenetur. Voluptas magnam autem eius suscipit veniam hic iure, ea similique quos placeat quae, officiis laboriosam recusandae repellat atque provident aliquid.
+        </p>
+    </div>
+    <script>
+        const data = document.getElementById('content');
+        console.log(data)
+
+        // data.style.color='red';
+        data.style.backgroundColor='green';
+        data.innerText = 'welcome to javascript class</b>'
+
+        const para = document.getElementsByClassName('para')
+        console.log(para)
+
+        // const data  = document.querySelector('div')
+        // const data  = document.querySelector('p')
+        // const data  = document.querySelector('#content')
+        const data  = document.querySelector('para')
+        console.log(data)
+
+        // const paras  = document.querySelectorAll('p')
+        // const paras  = document.querySelectorAll('p.para')
+        const paras  = document.querySelectorAll('#p')
+        console.log(paras)
+
+        const data  = document.querySelector('p')
+        console.log(data.classList)
+
+        data.classList.add('red')
+        console.log(data.classList)
+
+        data.classList.remove('red')
+        console.log(data.classList)
+
+        const data  = document.querySelector('p')
+        console.log(data)
+        console.log(data.parentElement)
+        console.log(data.parentElement.parentElement)
+        console.log(data.parentElement.parentElement.parentElement)
+
+    </script> -->
+
+    <!-- ************************************text********************************** -->
+
+    <div class="text" id="box">Hi</div>
+    <script src="java.js"></script>
+
+    
+</body>
+</html>

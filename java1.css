@@ -1,0 +1,38 @@
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:flow-root;
+    height: 100vh;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: green;
+}
+.pbox{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    z-index: 2;
+}
+.cbox{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+} */
+
+/* ************ligth mode to dark mode or v/s********************* */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.dark{
+    background-color: black;
+}

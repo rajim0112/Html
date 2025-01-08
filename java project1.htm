@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-List</title>
+</head>
+<link rel="stylesheet" href="java project1.css">
+<body>
+    <h1>Todo - List</h1>
+    <div>
+        <input id="task"> <button id="add">Add</button>
+    </div>
+    <ul id="tasks">
+        <!-- <li><input type="checkbox" id="check"><span>html</span><button id="remove">🗑️</button></li> -->
+    </ul>
+    <script>
+        const inpt = document.getElementById('task')
+        const addBtn = document.getElementById('add')
+        const list = document.getElementById('tasks')
+
+        function addTask(task) {
+            const item = document.createElement('li')
+
+            const checkBox = document.createElement('input')
+            // checkBox.setAttribute('type', 'checkbox')
+            checkBox.type = 'checkbox'
+
+            const taskText = document.createElement('span')
+            taskText.innerText = task
+
+            checkBox.addEventListener('change', () => {
+                if(checkBox.checked === true) {
+                    taskText.style.textDecoration = 'line-through'
+                } else {
+                    taskText.style.textDecoration = 'none'
+                }
+            })
+
+            const deleteBtn = document.createElement('button')
+            deleteBtn.innerText = 'delete'
+
+            deleteBtn.addEventListener('click', () => {
+                item.remove()
+            })
+
+            item.appendChild(checkBox)
+            item.appendChild(taskText)
+            item.appendChild(deleteBtn)
+
+            list.appendChild(item)
+        }
+
+        addBtn.addEventListener('click', () => {
+            const value = inpt.value
+            if(value.trim() !== '') {
+                addTask(value)
+            }
+            inpt.value = ''
+        })
+
+    </script>   
+</body>
+</html>
